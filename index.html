@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiaqi Zhou — Portfolio</title>
+  <meta name="description" content="Jiaqi Zhou's personal portfolio and project showcase." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Jiaqi Zhou</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="container">
+        <h1>Hi, I'm Jiaqi Zhou.</h1>
+        <p class="subtitle">I build software and machine learning tools for real-world problems.</p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="https://github.com/jqzhappyhours" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I'm a software engineer interested in computer vision, machine learning, and building
+          practical tools. This site collects the projects I've shipped and am currently working on.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-card-body">
+              <h3>Pole Shape Classifier</h3>
+              <p>
+                A Streamlit app that analyzes pole dance videos and labels each second with the
+                performer's current shape, using MediaPipe pose landmarks and a gradient boosting
+                classifier. Recognizes six shapes — airwalk, climb, inside leg hang, invert,
+                outside leg hang, and pencil — with an overall F1 score of 0.89.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>MediaPipe</li>
+                <li>scikit-learn</li>
+                <li>Streamlit</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://pole-shape-classifier.streamlit.app" target="_blank" rel="noopener">Live Demo →</a>
+                <a href="https://github.com/jqzhappyhours/pole-shape-classifier" target="_blank" rel="noopener">Source Code →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:jiaqizhou98@gmail.com">jiaqizhou98@gmail.com</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com/jqzhappyhours" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jiaqi Zhou</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
