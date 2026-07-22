@@ -292,26 +292,9 @@ a:hover {
   border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
 }
 
-.project-card-image {
-  display: block;
-  width: 100%;
-  aspect-ratio: 488 / 573;
-  object-fit: cover;
-  object-position: top;
-  background: var(--bg-soft);
-}
-
-@media (min-width: 560px) {
-  .project-card {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    align-items: stretch;
-  }
-
-  .project-card-image {
-    height: 100%;
-    aspect-ratio: auto;
-  }
+.project-card-accent {
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
 
 .project-card-body {
