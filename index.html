@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiaqi Zhou — Portfolio</title>
-  <meta name="description" content="Jiaqi Zhou's personal portfolio and project showcase." />
+  <title>Jiaqi Zhou — Data Scientist</title>
+  <meta name="description" content="Jiaqi Zhou — data scientist portfolio and project showcase." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%232563eb%22/><text x=%2232%22 y=%2242%22 font-family=%22system-ui%22 font-size=%2226%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22>JZ</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,9 +26,12 @@
 
   <main>
     <section id="top" class="hero">
-      <div class="container">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="avatar">JZ</div>
+        <p class="eyebrow">Data Scientist</p>
         <h1>Hi, I'm Jiaqi Zhou.</h1>
-        <p class="subtitle">I build software and machine learning tools for real-world problems.</p>
+        <p class="subtitle">I turn messy data into models that make real decisions — from pose estimation to gradient boosting.</p>
         <div class="hero-links">
           <a class="btn btn-primary" href="#projects">View Projects</a>
           <a class="btn btn-secondary" href="https://github.com/jqzhappyhours" target="_blank" rel="noopener">GitHub</a>
@@ -32,22 +39,26 @@
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <div class="container">
-        <h2>About</h2>
-        <p>
-          I'm a software engineer interested in computer vision, machine learning, and building
-          practical tools. This site collects the projects I've shipped and am currently working on.
+        <p class="section-label">About</p>
+        <h2>What I do</h2>
+        <p class="lead">
+          I'm a data scientist who likes working end-to-end — from wrangling raw signal, to
+          engineering features, to shipping a model behind a real interface people can use.
+          This site collects the projects I've built along the way.
         </p>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="container">
-        <h2>Projects</h2>
+        <p class="section-label">Projects</p>
+        <h2>Selected work</h2>
         <div class="project-grid">
 
           <article class="project-card">
+            <div class="project-card-accent"></div>
             <div class="project-card-body">
               <h3>Pole Shape Classifier</h3>
               <p>
@@ -63,8 +74,8 @@
                 <li>Streamlit</li>
               </ul>
               <div class="project-links">
-                <a href="https://pole-shape-classifier.streamlit.app" target="_blank" rel="noopener">Live Demo →</a>
-                <a href="https://github.com/jqzhappyhours/pole-shape-classifier" target="_blank" rel="noopener">Source Code →</a>
+                <a href="https://pole-shape-classifier.streamlit.app" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a href="https://github.com/jqzhappyhours/pole-shape-classifier" target="_blank" rel="noopener">Source Code ↗</a>
               </div>
             </div>
           </article>
@@ -73,14 +84,15 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
       <div class="container">
-        <h2>Contact</h2>
-        <p>
-          <a href="mailto:jiaqizhou98@gmail.com">jiaqizhou98@gmail.com</a>
-          &nbsp;·&nbsp;
-          <a href="https://github.com/jqzhappyhours" target="_blank" rel="noopener">GitHub</a>
-        </p>
+        <p class="section-label">Contact</p>
+        <h2>Let's talk</h2>
+        <p class="lead">Reach out — I'm always happy to talk data, models, or new ideas.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:jiaqizhou98@gmail.com">Email me</a>
+          <a class="btn btn-secondary" href="https://github.com/jqzhappyhours" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </section>
   </main>

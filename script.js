@@ -15,3 +15,13 @@ themeToggle.addEventListener("click", () => {
   root.setAttribute("data-theme", next);
   localStorage.setItem("theme", next);
 });
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add("in-view");
+    });
+  },
+  { threshold: 0.15 }
+);
+document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
